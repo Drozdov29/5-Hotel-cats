@@ -30,7 +30,10 @@
     "stylelint-config-recommended": "^3.0.0"
   },
   "dependencies": {
+    "deep-extend": "^0.6.0",
     "gulp-htmlmin": "^5.0.1",
+    "lodash.template": "^4.5.0",
+    "merge": "^1.2.1",
     "normalize.css": "^8.0.1",
     "svg4everybody": "^2.1.9",
     "svgxuse": "^1.2.6"
