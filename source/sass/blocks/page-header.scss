@@ -1,0 +1,91 @@
+// MOBILE
+.page-header {
+  position: relative;
+
+  margin-top: 12px;
+}
+
+.page-header__container {
+  position: relative;
+}
+
+.page-header__logo {
+  position: relative;
+
+  display: block;
+  width: 46px;
+  height: 38px;
+  margin-bottom: 12px;
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 22px;
+  height: 14px;
+  // background-image: url("../img/icon-open.svg");
+  // background-repeat: no-repeat;
+  // background-position: center;
+  // background-color: #811b1b;
+  // box-shadow: 0 8px 0 0 #6d1515, 0 16px 0 0 #7a2626;
+
+  cursor: pointer;
+}
+
+.main-nav--opened .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 14px;
+  height: 14px;
+  // background-color: rgba(170, 38, 38, 0.3);
+  // box-shadow: 0 8px 0 0 rgba(116, 34, 34, 0.3), 0 16px 0 0 rgrgba(145, 36, 36, 0.3)
+
+  background-image: url("../img/icon-closed.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: 12px;
+  right: 15px;
+
+  display: block;
+  width: 22px;
+  height: 14px;
+  padding: 0;
+  // background: #f80000;
+  // background-color: transparent;
+
+  border: none;
+}
+
+
+// Закрытие меню только для mobile
+// @media (max-width: $mobile-width-only) {
+//   .main-nav--closed .main-nav__list {
+//     display: none;
+//   }
+
+//   .main-nav--nojs .main-nav__toggle {
+//     display: none;
+//   }
+// }
+// TABLET
+
+// @media (min-width: $tablet-width) {
+//   background-color: blue;
+// }
+
+// // DESKTOP
+
+// @media (min-width: $desktop-width) {
+//   background-color: yellow;
+// }
