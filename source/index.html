@@ -18,23 +18,29 @@
       <include src="build/img/sprite.svg"></include>
     </div>
     <header class="page-header">
-      <div class="page-header__container container">
-        <a class="page-header__logo">
-          <picture>
-            <source media="(min-width: 1366px)" srcset="img/icon-logo.svg">
-            <source media="(min-width: 768px)" srcset="img/icon-logo.svg">
-            <img class="page-header__logo-img" src="img/icon-logo.svg" alt="Логотип Отель Котейка" width="46" height="38">
-          </picture>
-        </a>
+      <div class="page-header__container">
+        <div class="page-header__wrapper-logo page-header__wrapper-logo--orange page-header__wrapper-logo--white">
+          <a class="page-header__logo">
+            <picture>
+              <source media="(min-width: 1366px)" srcset="img/icon-logo.svg">
+              <source media="(min-width: 768px)" srcset="img/icon-logo.svg">
+              <img class="page-header__logo-img" src="img/icon-logo.svg" alt="Логотип Отель Котейка" width="46" height="38">
+            </picture>
+          </a>
+        </div>
         <nav class="main-nav main-nav--opened main-nav--nojs">
           <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-          <ul class="main-nav__list site-list">
+          <ul class="main-nav__list">
             <li class="main-nav__item"><a class="main-nav__link" href="№">Почему мы&#63;</a></li>
             <li class="main-nav__item"><a class="main-nav__link" href="№">Номера</a></li>
             <li class="main-nav__item"><a class="main-nav__link" href="№">Отзывы</a></li>
             <li class="main-nav__item"><a class="main-nav__link" href="№">Контакты</a></li>
-            <li class="main-nav__item"><a href="tel:+78003335599" aria-label="Телефон отеля">8 (800) 333 55 99</a></li>
-            <li class="main-nav__item site-social">
+          </ul>
+          <ul class="main-nav__list site-phone">
+            <li class="site-phone__item"><a class="site-phone__link" href="tel:+78003335599" aria-label="Телефон отеля">8 (800) 333 55 99</a></li>
+          </ul>
+          <ul class="main-nav__list site-social">
+            <li class="site-social__item">
               <a href="#" class="site-social__link">
                 <span class="visually-hidden">Фейсбук</span>
                 <svg class="site-social__svg site-social__svg--fb" width="24" height="24" viewBox="0 0 24 24">
@@ -42,7 +48,7 @@
                 </svg>
               </a>
             </li>
-            <li class="main-nav__item site-social">
+            <li class="site-social__item">
               <a href="#" class="site-social__link">
                 <span class="visually-hidden">Инстаграмм</span>
                 <svg class="site-social__svg site-social__svg--ins" width="24" height="24" viewBox="0 0 24 24">
@@ -50,7 +56,7 @@
                 </svg>
               </a>
             </li>
-            <li class="main-nav__item site-social">
+            <li class="site-social__item">
               <a href="#" class="site-social__link">
                 <span class="visually-hidden">Вконтакте</span>
                 <svg class="site-social__svg site-social__svg--vk" width="24" height="24" viewBox="0 0 24 24">
