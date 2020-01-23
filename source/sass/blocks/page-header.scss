@@ -11,7 +11,7 @@
 
 .page-header__wrapper-logo {
   min-height: 62px;
-  
+
   // &--orange {
   //   background-color: $color-seven;
   // }
@@ -22,17 +22,19 @@
 
 .page-header__logo {
   position: relative;
-margin-top: 12px;
+
   display: block;
   width: 46px;
   height: 38px;
+  margin-top: 12px;
   padding: 0 15px;
 }
 
 .main-nav {
-  background-color: $color-seven;
   margin: 0 auto;
   padding: 0 15px;
+
+  background-color: $color-seven;
 }
 
 .main-nav--closed .main-nav__toggle::before {
@@ -43,10 +45,10 @@ margin-top: 12px;
 
   width: 22px;
   height: 14px;
+
   background-image: url("../img/icon-open.svg");
   background-repeat: no-repeat;
   background-position: center;
-
   cursor: pointer;
 }
 
@@ -74,10 +76,11 @@ margin-top: 12px;
   width: 22px;
   height: 14px;
   padding: 0;
-  background-color: transparent;
 
+  background-color: transparent;
   border: none;
 }
+
 .main-nav__list {
   @include reset-list;
 }
@@ -91,39 +94,38 @@ margin-top: 12px;
 }
 
 .main-nav__link {
-  font-family: $font-second;
+  display: flex;
+  align-items: center;
+
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
-  display: flex;
-  align-items: center;
+  font-family: $font-second;
   color: $color-five;
-  }
+}
 
-  .site-phone {
-    margin-bottom: 25px;
-  }
+.site-phone {
+  margin-bottom: 25px;
+}
 
-  .site-phone__link {
-    font-family: $font-second;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 19px;
-    color: $color-five;
-  }
+.site-phone__link {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  font-family: $font-second;
+  color: $color-five;
+}
 
-  .site-social {
-    display: flex;
-    padding-bottom: 50px;
-  }
+.site-social {
+  display: flex;
+  padding-bottom: 50px;
+}
 
-  .site-social__item:not(:last-child) {
-    margin-right: 20px;
-  }
-
-
+.site-social__item:not(:last-child) {
+  margin-right: 20px;
+}
 
 
 // Закрытие меню только для mobile
