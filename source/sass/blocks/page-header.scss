@@ -11,13 +11,6 @@
 
 .page-header__wrapper-logo {
   min-height: 62px;
-
-  // &--orange {
-  //   background-color: $color-seven;
-  // }
-  // &--white {
-  //   background-color: $color-one;
-  // }
 }
 
 .page-header__logo {
@@ -26,7 +19,7 @@
   display: block;
   width: 46px;
   height: 38px;
-  margin-top: 12px;
+  margin-top: 14px;
   padding: 0 15px;
 }
 
@@ -127,6 +120,57 @@
   margin-right: 20px;
 }
 
+.main__promo {
+  min-height: 457px;
+  margin-bottom: 50px;
+
+  text-align: center;
+
+  background-color: $color-seven;
+  background-image: url("../img/img-background-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+}
+
+.main__title-city {
+  margin: 0;
+  padding: 0;
+  padding-top: 47px;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: inherit;
+  font-family: $font-stack;
+  color: inherit;
+}
+
+.main__title-heading {
+  margin: 0;
+  margin-bottom: 6px;
+  padding: 0;
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 44px;
+  line-height: 52px;
+  font-family: $font-second;
+  color: inherit;
+}
+
+.main__subtitle {
+  margin: 0;
+  margin-bottom: 37px;
+  padding: 0;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  font-family: $font-stack;
+  color: inherit;
+}
 
 // Закрытие меню только для mobile
 @media (max-width: $mobile-width-only) {

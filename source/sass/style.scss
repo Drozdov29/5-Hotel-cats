@@ -5,7 +5,7 @@
 @import "scaffolding.scss";           // СТИЛЬ С BODY
 
 // BLOCK index.html
-// @import "blocks/button.scss";        // Кнопка
+@import "blocks/button.scss";        // Кнопка
 @import "blocks/page-header.scss";   // Навигация
 // @import "blocks/offer.scss";         // Предложение
 // @import "blocks/catalog.scss";       // Каталог
@@ -20,4 +20,3 @@
 // // BLOCK catalog.html
 // @import "blocks/product.scss";        // Product
 // @import "blocks/addon.scss";          // Section form.
-
