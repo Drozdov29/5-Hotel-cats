@@ -122,7 +122,6 @@
 
 .main__promo {
   min-height: 457px;
-  margin-bottom: 50px;
 
   text-align: center;
 
@@ -172,16 +171,143 @@
   color: inherit;
 }
 
-// Закрытие меню только для mobile
-@media (max-width: $mobile-width-only) {
-  .main-nav--closed .main-nav__list {
-    display: none;
+.why {
+  padding: 0 15px;
+
+  background-color: $color-three;
+  background-image: url("../img/img-paw.png");
+  background-repeat: no-repeat;
+  background-position: top 49px right -20px;
+}
+
+.why__title {
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
+  padding-top: 70px;
+}
+
+.title-h2 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 33px;
+  font-family: $font-second;
+  text-align: center;
+  color: $color-five;
+}
+
+.why__list {
+  @include reset-list;
+}
+
+.why__items {
+  position: relative;
+
+  width: 290px;
+  height: 289px;
+  padding-top: 110px;
+  padding-left: 25px;
+
+  background-color: $color-one;
+  border-radius: 8px;
+  box-shadow: 0 0 25px rgba(208, 208, 208, 0.25);
+
+  @include box-sizing;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+
+    width: 60px;
+    height: 60px;
+
+    background-repeat: no-repeat;
   }
 
-  .main-nav--nojs .main-nav__toggle {
-    display: none;
+  &--temp::before {
+    background-image: url("../img/icon-temp.svg");
+  }
+
+  &--camera::before {
+    background-image: url("../img/icon-camera.svg");
+  }
+
+  &--taxi::before {
+    background-image: url("../img/icon-taxi.svg");
+  }
+
+  &--nutrition::before {
+    background-image: url("../img/icon-nutrition.svg");
+  }
+
+  &--strolls::before {
+    background-image: url("../img/icon-strolls.svg");
+  }
+
+  &--veterinarians::before {
+    background-image: url("../img/icon-veterinarians.svg");
   }
 }
+
+
+
+// .why__items:not(:last-child) {
+//   margin-bottom: 30px;
+// }
+
+.why__text {
+  margin: 0;
+  margin-bottom: 13px;
+  padding: 0;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25.2px;
+  font-family: $font-second;
+  text-align: left;
+  color: $color-five;
+}
+
+.why__desk {
+  margin: 0;
+  padding: 0;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 21px;
+  font-family: $font-stack;
+  text-align: left;
+  color: $color-five;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Закрытие меню только для mobile
+// @media (max-width: $mobile-width-only) {
+//   .main-nav--closed .main-nav__list {
+//     display: none;
+//   }
+
+//   .main-nav--nojs .main-nav__toggle {
+//     display: none;
+//   }
+// }
 
 // TABLET
 
