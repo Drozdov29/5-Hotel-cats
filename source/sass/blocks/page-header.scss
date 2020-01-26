@@ -1,8 +1,6 @@
 // MOBILE
 .page-header {
   position: relative;
-
-  // padding-top: 12px;
 }
 
 .page-header__container {
@@ -177,7 +175,7 @@
   background-color: $color-three;
   background-image: url("../img/img-paw.png");
   background-repeat: no-repeat;
-  background-position: top 49px right -20px;
+  background-position: top 55px right -25px;
 }
 
 .why__title {
@@ -205,7 +203,7 @@
   position: relative;
 
   width: 290px;
-  height: 289px;
+  // height: 289px;
   padding-top: 110px;
   padding-left: 25px;
 
@@ -218,8 +216,8 @@
   &::before {
     content: "";
     position: absolute;
-    top: 10px;
-    left: 10px;
+    top: 25px;
+    left: 25px;
 
     width: 60px;
     height: 60px;
@@ -252,11 +250,9 @@
   }
 }
 
-
-
-// .why__items:not(:last-child) {
-//   margin-bottom: 30px;
-// }
+.why__items:not(:last-child) {
+  margin-bottom: 30px;
+}
 
 .why__text {
   margin: 0;
@@ -275,6 +271,7 @@
 .why__desk {
   margin: 0;
   padding: 0;
+  padding-bottom: 25px;
 
   font-style: normal;
   font-weight: normal;
@@ -285,16 +282,127 @@
   color: $color-five;
 }
 
+.numbers {
+  position: relative;
 
+  &__title {
+    margin: 0;
+    margin-bottom: 40px;
+    padding: 0;
+    padding-top: 70px;
+  }
+}
 
+// Блок слайдера
+.numbers__slider {
+  position: relative;
+}
 
+.numbers__slider input[type="radio"] {
+  display: none;
+}
 
+.numbers__sliders-inner {
+  display: flex;
+  margin: 0 15px;
+  overflow: hidden;
+}
 
+.numbers__slider-block {
+  width: 300%;
 
+  transition: transform 0.8s ease;
+}
 
+.numbers__block-text {
+  width: 290px;
+  height: 498px;
+}
 
+.numbers__controls {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
 
+  width: 100%;
 
+  text-align: center;
+}
+
+.numbers__radio {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin: 0 3px;
+
+  background: #cccccc;
+  border: 4px solid white;
+  border-radius: 50%;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+
+  transition: background-color 0.2s;
+}
+
+#btn-1:checked ~ .numbers__controls label[for="btn-1"],
+#btn-2:checked ~ .numbers__controls label[for="btn-2"],
+#btn-3:checked ~ .numbers__controls label[for="btn-3"] {
+  background-color: red;
+}
+
+#btn-1:checked ~ .numbers__sliders-inner .numbers__slider-block {
+  transform: translate(0);
+}
+
+#btn-2:checked ~ .numbers__sliders-inner .numbers__slider-block {
+  transform: translate(-290px);
+}
+
+#btn-3:checked ~ .numbers__sliders-inner .numbers__slider-block {
+  transform: translate(-580px);
+}
+
+.numbers__heading {
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0;
+  padding-top: 25px;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  font-family: $font-second;
+  color: $color-five;
+}
+
+.number__inner-text {
+  padding: 0 25px;
+}
+
+.numbers__list {
+  position: relative;
+
+  @include reset-list;
+}
+
+.numbers__items {
+  padding-left: 19px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 11px;
+    height: 11px;
+
+    background-color: $color-seven;
+    border-radius: 50%;
+  }
+}
 
 
 
