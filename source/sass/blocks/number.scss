@@ -1,0 +1,149 @@
+.numbers {
+  position: relative;
+
+  padding-bottom: 93px;
+
+  background-color: $color-three;
+
+  &__title {
+    margin: 0;
+    margin-bottom: 40px;
+    padding: 0;
+    padding-top: 70px;
+  }
+}
+
+// Блок слайдера
+.numbers__slider {
+  position: relative;
+}
+
+.numbers__slider input[type="radio"] {
+  display: none;
+}
+
+.numbers__sliders-inner {
+  display: flex;
+  margin: 0 15px;
+  overflow: hidden;
+
+  background-color: $color-one;
+  border-radius: 8px;
+  box-shadow: 0 0 25px rgba(208, 208, 208, 0.25);
+}
+
+.numbers__slider-block {
+  width: 300%;
+
+  transition: transform 0.8s ease;
+}
+
+.numbers__block-text {
+  width: 290px;
+  min-height: 445px;
+}
+
+.numbers__controls {
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  z-index: 100;
+
+  width: 100%;
+
+  text-align: center;
+}
+
+.numbers__radio {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-right: 12px;
+
+  background-color: $color-nine;
+  border-radius: 50%;
+  cursor: pointer;
+
+  transition: background-color 0.9s;
+}
+
+#btn-1:checked ~ .numbers__controls label[for="btn-1"],
+#btn-2:checked ~ .numbers__controls label[for="btn-2"],
+#btn-3:checked ~ .numbers__controls label[for="btn-3"] {
+  background-color: $color-seven;
+}
+
+#btn-1:checked ~ .numbers__sliders-inner .numbers__slider-block {
+  transform: translate(0);
+}
+
+#btn-2:checked ~ .numbers__sliders-inner .numbers__slider-block {
+  transform: translate(-290px);
+}
+
+#btn-3:checked ~ .numbers__sliders-inner .numbers__slider-block {
+  transform: translate(-580px);
+}
+// Конец слайдера//
+
+.numbers__heading {
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0;
+  padding-top: 25px;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  font-family: $font-second;
+  color: $color-five;
+}
+
+.number__inner-text {
+  padding: 0 25px;
+}
+
+.numbers__list {
+  position: relative;
+
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0;
+  padding-right: 20px;
+
+  list-style: none;
+}
+
+.numbers__items {
+  display: flex;
+  margin-bottom: 10px;
+
+  &::before {
+    content: "";
+
+    width: 11px;
+    height: 11px;
+    margin-top: 4px;
+    margin-right: 8px;
+
+    background-color: $color-seven;
+    border-radius: 50%;
+  }
+}
+
+.numbers__text {
+  margin: 0;
+  padding: 0;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+  font-family: $font-stack;
+  color: #1a212f;
+}
+
+.numbers__btn {
+  margin-bottom: 25px;
+}

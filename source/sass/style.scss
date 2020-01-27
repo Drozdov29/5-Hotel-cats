@@ -7,9 +7,9 @@
 // BLOCK index.html
 @import "blocks/button.scss";        // Кнопка
 @import "blocks/page-header.scss";   // Навигация
-// @import "blocks/offer.scss";         // Предложение
-// @import "blocks/catalog.scss";       // Каталог
-// @import "blocks/info.scss";          // Как работает
+@import "blocks/promo.scss";         // Предложение
+@import "blocks/why.scss";           // Каталог
+@import "blocks/number.scss";        // Как работает
 // @import "blocks/example.scss";       // Живой пример
 // @import "blocks/example-cat.scss";   // Живой Cat
 // @import "blocks/footer.scss";        // Footer
