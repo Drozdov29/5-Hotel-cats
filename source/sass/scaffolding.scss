@@ -12,6 +12,8 @@ body {
   line-height: 14px;
   font-family: $font-stack;
   color: $color-five;
+
+  @include box-sizing;
 }
 
 .container {

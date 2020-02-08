@@ -11,7 +11,7 @@
   margin: 0;
   margin-bottom: 40px;
   padding: 0;
-  padding-top: 70px;
+  padding-top: 63px;
 }
 
 .title-h2 {
@@ -32,20 +32,20 @@
   position: relative;
 
   width: 290px;
-
-// height: 289px;
-  padding-top: 110px;
+  // height: 289px;
+  padding-top: 105px;
   padding-left: 25px;
 
   background-color: $color-one;
   border-radius: 8px;
   box-shadow: 0 0 25px rgba(208, 208, 208, 0.25);
 
-@include box-sizing;
+  @include box-sizing;
+
   &::before {
     content: "";
     position: absolute;
-    top: 25px;
+    top: 20px;
     left: 25px;
 
     width: 60px;
@@ -85,7 +85,7 @@
 
 .why__text {
   margin: 0;
-  margin-bottom: 13px;
+  margin-bottom: 5px;
   padding: 0;
 
   font-style: normal;
@@ -100,7 +100,8 @@
 .why__desk {
   margin: 0;
   padding: 0;
-  padding-bottom: 25px;
+  padding-right: 40px;
+  padding-bottom: 28px;
 
   font-style: normal;
   font-weight: normal;

@@ -1,0 +1,134 @@
+.reviews {
+  position: relative;
+
+  padding-bottom: 100px;
+
+  background-color: $color-three;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -30px;
+    right: -30px;
+
+    width: 137px;
+    height: 144px;
+
+    background-image: url("../img/img-paw.png");
+    background-repeat: no-repeat;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 37px;
+    padding: 0;
+  }
+}
+
+// Блок слайдера
+.reviews__slider {
+  position: relative;
+}
+
+.reviews__slider input[type="radio"] {
+  display: none;
+}
+
+.reviews__sliders-inner {
+  margin: 0 15px;
+  overflow: hidden;
+
+  background-color: $color-one;
+  border-radius: 8px;
+  box-shadow: 0 0 25px rgba(208, 208, 208, 0.25);
+}
+
+.reviews__slider-block {
+  display: flex;
+  width: 300%;
+
+  transition: transform 0.8s ease;
+}
+
+.reviews__block-text {
+  position: relative;
+
+  width: 290px;
+  min-height: 230px;
+}
+
+.reviews__controls {
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  z-index: 100;
+
+  width: 100%;
+
+  text-align: center;
+}
+
+.reviews__radio {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-right: 12px;
+
+  background-color: $color-nine;
+  border-radius: 50%;
+  cursor: pointer;
+
+  transition: background-color 0.9s;
+}
+
+#btn-11:checked ~ .reviews__controls label[for="btn-11"],
+#btn-22:checked ~ .reviews__controls label[for="btn-22"],
+#btn-33:checked ~ .reviews__controls label[for="btn-33"] {
+  background-color: $color-seven;
+}
+
+#btn-11:checked ~ .reviews__sliders-inner .reviews__slider-block {
+  transform: translate(0);
+}
+
+#btn-22:checked ~ .reviews__sliders-inner .reviews__slider-block {
+  transform: translate(-290px);
+}
+
+#btn-33:checked ~ .reviews__sliders-inner .reviews__slider-block {
+  transform: translate(-580px);
+}
+
+// Конец слайдера//
+
+.reviews__inner-text {
+  padding: 0 25px;
+}
+
+.reviews__text {
+  position: relative;
+
+  margin: 0;
+  padding: 0;
+  padding: 25px 21px 25px 56px;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 21px;
+  font-family: $font-stack;
+  color: $color-five;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 30px;
+
+    width: 16px;
+    height: 17px;
+
+    background-image: url("../img/img-marks.png");
+    background-repeat: no-repeat;
+  }
+}

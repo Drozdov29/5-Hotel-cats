@@ -1,9 +1,12 @@
 .numbers {
   position: relative;
 
-  padding-bottom: 93px;
+  padding-bottom: 100px;
 
   background-color: $color-three;
+  background-image: url(../img/img-fish.png);
+  background-repeat: no-repeat;
+  background-position: left top 115px;
 
   &__title {
     margin: 0;

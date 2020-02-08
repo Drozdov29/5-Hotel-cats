@@ -118,19 +118,16 @@
   margin-right: 20px;
 }
 
-
-
-
 // Закрытие меню только для mobile
-// @media (max-width: $mobile-width-only) {
-//   .main-nav--closed .main-nav__list {
-//     display: none;
-//   }
+@media (max-width: $mobile-width-only) {
+  .main-nav--closed .main-nav__list {
+    display: none;
+  }
 
-//   .main-nav--nojs .main-nav__toggle {
-//     display: none;
-//   }
-// }
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+}
 
 // TABLET
 
