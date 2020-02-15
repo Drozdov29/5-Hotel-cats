@@ -31,10 +31,10 @@
         <nav class="main-nav main-nav--opened main-nav--nojs">
           <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           <ul class="main-nav__list">
-            <li class="main-nav__item"><a class="main-nav__link" href="№">Почему мы&#63;</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="№">Номера</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="№">Отзывы</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="№">Контакты</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#why">Почему мы&#63;</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#numbers">Номера</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#reviews">Отзывы</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#footer">Контакты</a></li>
           </ul>
           <ul class="main-nav__list site-phone">
             <li class="site-phone__item"><a class="site-phone__link" href="tel:+78003335599" aria-label="Телефон отеля">8 (800) 333 55 99</a></li>
@@ -76,7 +76,7 @@
         <button class="button button--white" type="button">Забронировать</button>
       </section>
       <section class="why">
-        <h2 class="why__title title-h2">Почему мы&#63;</h2>
+        <h2 class="why__title title-h2" id="why">Почему мы&#63;</h2>
         <div class="why__wrapper">
           <ul class="why__list">
             <li class="why__items why__items--temp">
@@ -107,7 +107,7 @@
         </div>
       </section>
       <section class="numbers">
-        <h2 class="numbers__title title-h2">Номера</h2>
+        <h2 class="numbers__title title-h2" id="numbers">Номера</h2>
         <div class="numbers__slider">
           <input type="radio" name="radio-toggle" id="btn-1" checked>
           <input type="radio" name="radio-toggle" id="btn-2">
@@ -182,7 +182,7 @@
         </div>
       </section>
       <section class="reviews">
-        <h2 class="reviews__title title-h2">Отзывы</h2>
+        <h2 class="reviews__title title-h2" id="reviews">Отзывы</h2>
         <div class="reviews__slider">
           <input type="radio" name="radio-toggle" id="btn-11" checked>
           <input type="radio" name="radio-toggle" id="btn-22">
@@ -208,67 +208,69 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
-      <div class="footer__address">
-        <h2 class="footer__title title-h2">Как нас найти</h2>
-        <ul class="footer__list">
-          <li class="footer__item">
-            <p class="footer__text">Адрес</p>
-            <p class="footer__desc">Санкт-Петербург, <br  class="desc-none"> ул Большая Конюшенная, д 19</p>
-          </li>
-          <li class="footer__item">
-            <p class="footer__text">Режим работы</p>
-            <p class="footer__desc">Ежедневно, с 9:00 до 20:00</p>
-          </li>
-          <li class="footer__item">
-            <p class="footer__text">Телефон</p>
-            <a class="footer__desc" href="tel:+78003335599">8 (800) 333-55-99</a>
-          </li>
-          <li class="footer__item">
-            <p class="footer__text">E-mail</p>
-            <a class="footer__desc" href="mailto:info@cat-hotel.ru">info@cat-hotel.ru</a>
-          </li>
-          <li class="footer__item">
-            <p class="footer__text">Социальные сети</p>
-            <ul class="footer__social-list">
-              <li class="footer__social-items">
-                <a href="#" class="footer__social-link">
-                  <span class="visually-hidden">Фейсбук</span>
-                  <svg class="footer__social-svg footer__social-svg--fb" width="24" height="24" viewBox="0 0 24 24">
-                    <use xlink:href="img/sprite.svg#icon-fb"></use>
-                  </svg>
-                </a>
-                </li>
-              <li class="footer__social-items">
-                <a href="#" class="footer__social-link">
-                  <span class="visually-hidden">Инстаграмм</span>
-                  <svg class="footer__social-svg footer__social-svg--ins" width="24" height="24" viewBox="0 0 24 24">
-                    <use xlink:href="img/sprite.svg#icon-ins"></use>
-                  </svg>
-                </a>
-                </li>
-              <li class="footer__social-items">
-                <a href="#" class="footer__social-link">
-                  <span class="visually-hidden">Вконтакте</span>
-                  <svg class="footer__social-svg footer__social-svg--vk" width="24" height="24" viewBox="0 0 24 24">
-                    <use xlink:href="img/sprite.svg#icon-vk"></use>
-                  </svg>
-                </a>
-                </li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-      <div id="map" class="footer__map">
+    <footer class="footer" id="footer">
+      <div class="footer__inner">
+        <div class="footer__address">
+          <h2 class="footer__title title-h2">Как нас найти</h2>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <p class="footer__text">Адрес</p>
+              <p class="footer__desc">Санкт-Петербург, <br  class="desc-none"> ул Большая Конюшенная, д 19</p>
+            </li>
+            <li class="footer__item">
+              <p class="footer__text">Режим работы</p>
+              <p class="footer__desc">Ежедневно, с 9:00 до 20:00</p>
+            </li>
+            <li class="footer__item">
+              <p class="footer__text">Телефон</p>
+              <a class="footer__desc" href="tel:+78003335599">8 (800) 333-55-99</a>
+            </li>
+            <li class="footer__item">
+              <p class="footer__text">E-mail</p>
+              <a class="footer__desc" href="mailto:info@cat-hotel.ru">info@cat-hotel.ru</a>
+            </li>
+            <li class="footer__item">
+              <p class="footer__text">Социальные сети</p>
+              <ul class="footer__social-list">
+                <li class="footer__social-items">
+                  <a href="#" class="footer__social-link">
+                    <span class="visually-hidden">Фейсбук</span>
+                    <svg class="footer__social-svg footer__social-svg--fb" width="24" height="24" viewBox="0 0 24 24">
+                      <use xlink:href="img/sprite.svg#icon-fb"></use>
+                    </svg>
+                  </a>
+                  </li>
+                <li class="footer__social-items">
+                  <a href="#" class="footer__social-link">
+                    <span class="visually-hidden">Инстаграмм</span>
+                    <svg class="footer__social-svg footer__social-svg--ins" width="24" height="24" viewBox="0 0 24 24">
+                      <use xlink:href="img/sprite.svg#icon-ins"></use>
+                    </svg>
+                  </a>
+                  </li>
+                <li class="footer__social-items">
+                  <a href="#" class="footer__social-link">
+                    <span class="visually-hidden">Вконтакте</span>
+                    <svg class="footer__social-svg footer__social-svg--vk" width="24" height="24" viewBox="0 0 24 24">
+                      <use xlink:href="img/sprite.svg#icon-vk"></use>
+                    </svg>
+                  </a>
+                  </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div id="map" class="footer__map">
 
+        </div>
       </div>
       <div class="footer__navigation">
         <img class="footer__img-nav" src="img/icon-logo.svg" alt="Логотип Отель Котейка" width="46" height="38">
         <ul class="footer__list-nav">
-          <li class="footer__item-nav"><a class="footer__link-nav" href="№">Почему мы&#63;</a></li>
-          <li class="footer__item-nav"><a class="footer__link-nav" href="№">Номера</a></li>
-          <li class="footer__item-nav"><a class="footer__link-nav" href="№">Отзывы</a></li>
-          <li class="footer__item-nav"><a class="footer__link-nav" href="№">Контакты</a></li>
+          <li class="footer__item-nav"><a class="footer__link-nav" href="#why">Почему мы&#63;</a></li>
+          <li class="footer__item-nav"><a class="footer__link-nav" href="#numbers">Номера</a></li>
+          <li class="footer__item-nav"><a class="footer__link-nav" href="#reviews">Отзывы</a></li>
+          <li class="footer__item-nav"><a class="footer__link-nav" href="#footer">Контакты</a></li>
         </ul>
       </div>
       <div class="footer__copyright">
@@ -279,7 +281,8 @@
     <script src="js/scripts.js"></script>
     <script src="js/map-icon.js"></script>
     <script src="js/picturefill.min.js"></script>
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-804f2623-ab44-4537-9382-a4fafb6b02cf&lang=ru_RU" type="text/javascript"></script>
+    <!-- <script src="https://api-maps.yandex.ru/2.1/?load=package.full&lang=ru-RU"></script> -->
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=804f2623-ab44-4537-9382-a4fafb6b02cf&lang=ru_RU" type="text/javascript"></script>
     <script src="js/svg4everybody.min.js"></script>
     <script>svg4everybody(); // run it now or whenever you are ready</script>
   </body>

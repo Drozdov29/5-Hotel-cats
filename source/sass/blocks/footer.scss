@@ -64,9 +64,14 @@
   position: relative;
 
   width: 100%;
-  height: 300px;
-}
+  min-height: 300px;
 
+  background-color: rgb(139, 119, 119);
+  background-image: url("../img/img-map-mobile.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
 
 .footer__navigation {
   padding: 0 15px;
@@ -123,4 +128,123 @@
   line-height: 14px;
   font-family: $font-stack;
   color: $color-ten;
+}
+
+// TABLET
+
+@media (min-width: $tablet-width) {
+  .footer__inner {
+    display: flex;
+    width: 100%;
+  }
+
+  .footer__address {
+    width: 50%;
+    margin: 0 auto;
+    padding: 0;
+    padding-left: 45px;
+  }
+
+  .footer__item {
+    &:last-child {
+      margin-bottom: 60px;
+    }
+  }
+
+  .footer__title {
+    margin: 0;
+    margin-bottom: 40px;
+    padding-top: 60px;
+  }
+
+  .title-h2 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 43px;
+    font-family: $font-second;
+  }
+
+  .footer__map {
+    width: 50%;
+
+    background-image: url("../img/img-map-table.png");
+  }
+
+  .footer__navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 45px;
+  }
+
+  .footer__img-nav {
+    width: 63px;
+    height: 52px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .footer__list-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .footer__item-nav {
+    margin: 0;
+
+    &:not(:last-child) {
+      padding-right: 30px;
+    }
+  }
+
+  .footer__copyright {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 45px;
+  }
+}
+
+// // DESKTOP
+
+@media (min-width: $desktop-width) {
+  .footer__address {
+    width: 30%;
+    margin: 0 auto;
+    padding: 0;
+    padding-left: 198px;
+  }
+
+  .footer__item {
+    margin-bottom: 35px;
+
+    &:last-child {
+      margin-bottom: 70px;
+    }
+  }
+
+  .footer__text {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .footer__desc {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .footer__map {
+    width: 70%;
+
+    background-image: url("../img/img-map-desktop.png");
+  }
+
+  .footer__navigation {
+    padding: 0 198px;
+  }
+
+  .footer__copyright {
+    padding: 0 198px;
+  }
 }
