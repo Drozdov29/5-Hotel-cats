@@ -2,7 +2,7 @@
   padding: 0 15px;
 
   background-color: $color-three;
-  background-image: url("../img/img-paw.png");
+  background-image: url("../img/img-paw-mobile.png");
   background-repeat: no-repeat;
   background-position: top 55px right -25px;
 }
@@ -110,4 +110,24 @@
   font-family: $font-stack;
   text-align: left;
   color: $color-five;
+}
+
+
+// TABLET
+
+@media (min-width: $tablet-width) {
+  .why {
+    padding: 0 15px;
+
+    background-color: $color-three;
+    background-image: url("../img/img-paw-table.png");
+    background-repeat: no-repeat;
+    background-position: top 55px right -25px;
+  }
+}
+
+
+// DESKTOP
+
+@media (min-width: $desktop-width) {
 }

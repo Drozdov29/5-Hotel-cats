@@ -1,17 +1,17 @@
 
-.main__promo {
+.promo {
   min-height: 457px;
 
   text-align: center;
 
   background-color: $color-seven;
-  background-image: url("../img/img-background-mobile.jpg");
+  background-image: url("../../img/img-bg-mobile@2x.jpg");
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100% 100%;
+  background-position: center center;
+  background-size: cover;
 }
 
-.main__title-city {
+.promo__title-city {
   margin: 0;
   padding: 0;
   padding-top: 47px;
@@ -24,7 +24,7 @@
   color: inherit;
 }
 
-.main__title-heading {
+.promo__title-heading {
   margin: 0;
   margin-bottom: 6px;
   padding: 0;
@@ -37,7 +37,7 @@
   color: inherit;
 }
 
-.main__subtitle {
+.promo__subtitle {
   margin: 0;
   margin-bottom: 37px;
   padding: 0;
@@ -48,4 +48,53 @@
   line-height: 19px;
   font-family: $font-stack;
   color: inherit;
+}
+
+
+// TABLET
+
+@media (min-width: $tablet-width) {
+  .promo {
+    min-height: 868px;
+
+    background-image: url("../../img/img-bg-table@2x.jpg");
+  }
+
+  .promo__title-city {
+    padding-top: 140px;
+
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .promo__title-heading {
+    margin-bottom: 15px;
+
+    font-size: 62px;
+    line-height: 73px;
+  }
+
+  .promo__subtitle {
+    margin-bottom: 37px;
+
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+
+// DESKTOP
+
+@media (min-width: $desktop-width) {
+  .promo {
+    min-height: 504px;
+
+    text-align: left;
+
+    background-image: url("../../img/img-bg-desktop@2x.jpg");
+  }
+
+  .promo__inner {
+    padding-left: 198px;
+  }
 }
