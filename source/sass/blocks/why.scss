@@ -1,10 +1,8 @@
 .why {
-  padding: 0 15px;
-
   background-color: $color-three;
   background-image: url("../img/img-paw-mobile.png");
   background-repeat: no-repeat;
-  background-position: top 55px right -25px;
+  background-position: top 30px right -45px;
 }
 
 .why__title {
@@ -25,20 +23,27 @@
 }
 
 .why__list {
-  @include reset-list;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0 15px;
+
+  list-style: none;
 }
 
 .why__items {
   position: relative;
 
-  width: 290px;
-  // height: 289px;
+  flex-grow: 1;
+  min-width: 290px;
   padding-top: 105px;
+  padding-right: 30px;
+  padding-bottom: 20px;
   padding-left: 25px;
 
   background-color: $color-one;
   border-radius: 8px;
-  box-shadow: 0 0 25px rgba(208, 208, 208, 0.25);
+  box-shadow: 0 0 25px rgba(208, 208, 208, 0.541);
 
   @include box-sizing;
 
@@ -47,14 +52,16 @@
     position: absolute;
     top: 20px;
     left: 25px;
-
-    width: 60px;
-    height: 60px;
+    // width: 60px;
+    // height: 60px;
 
     background-repeat: no-repeat;
   }
 
   &--temp::before {
+    width: 80px;
+    height: 80px;
+
     background-image: url("../img/icon-temp.svg");
   }
 
@@ -100,8 +107,6 @@
 .why__desk {
   margin: 0;
   padding: 0;
-  padding-right: 40px;
-  padding-bottom: 28px;
 
   font-style: normal;
   font-weight: normal;
@@ -117,17 +122,94 @@
 
 @media (min-width: $tablet-width) {
   .why {
-    padding: 0 15px;
-
-    background-color: $color-three;
     background-image: url("../img/img-paw-table.png");
-    background-repeat: no-repeat;
-    background-position: top 55px right -25px;
+    background-position: top -10px right -110px;
+  }
+
+  .why__title {
+    margin: 0;
+    margin-bottom: 60px;
+    padding: 0;
+    padding-top: 120px;
+  }
+
+  .why__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 45px;
+
+    @include box-sizing;
+  }
+
+  .why__items {
+    flex-grow: 1;
+    width: 324px;
+    margin-bottom: 30px;
+    padding-top: 120px;
+    padding-right: 40px;
+    padding-left: 25px;
+
+    &::before {
+      width: 75px;
+      height: 75px;
+    }
+  }
+
+  .why__items:nth-child(odd) {
+    margin-right: 30px;
+  }
+
+  .why__text {
+    font-size: 20px;
+    line-height: 28px;
   }
 }
-
 
 // DESKTOP
 
 @media (min-width: $desktop-width) {
+  .why {
+    background-image: url("../img/img-paw-desktop.png");
+    background-position: top -30px right -120px;
+  }
+
+  .why__title {
+    margin-bottom: 70px;
+    padding-top: 140px;
+  }
+
+  .why__list {
+    max-width: 1750px;
+    padding: 0 98px;
+  }
+
+  .why__items {
+    width: 370px;
+    margin-bottom: 20px;
+    padding-top: 150px;
+    padding-right: 50px;
+    padding-left: 30px;
+
+    &::before {
+      width: 90px;
+      height: 90px;
+    }
+  }
+
+  .why__items:nth-of-type(2n) {
+    margin-right: 30px;
+  }
+
+  .why__text {
+    font-size: 22px;
+    line-height: 31px;
+  }
+
+  .why__desk {
+    font-size: 16px;
+    line-height: 22px;
+  }
 }

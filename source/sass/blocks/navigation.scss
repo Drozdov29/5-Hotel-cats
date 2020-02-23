@@ -3,6 +3,14 @@
   position: relative;
 }
 
+.page-header.light-theme {
+  background-color: $color-one;
+}
+
+.page-header.dark-theme {
+  background-color: $color-seven;
+}
+
 .page-header__container {
   position: relative;
 }
@@ -17,15 +25,13 @@
   display: block;
   width: 46px;
   height: 38px;
-  margin-top: 14px;
-  padding: 0 15px;
+  padding: 14px 15px 0;
 }
 
 .main-nav {
-  margin: 0 auto;
   padding: 0 15px;
 
-  background-color: $color-seven;
+  text-align: center;
 }
 
 .main-nav--closed .main-nav__toggle::before {
@@ -60,7 +66,7 @@
 
 .main-nav__toggle {
   position: absolute;
-  top: 12px;
+  top: 26px;
   right: 15px;
 
   display: block;
@@ -73,6 +79,8 @@
 }
 
 .main-nav__list {
+  justify-content: center;
+
   @include reset-list;
 }
 
@@ -150,6 +158,10 @@
 
   .main-nav__toggle {
     display: none;
+  }
+
+  .page-header.dark-theme {
+    background-color: $color-one;
   }
 
   .main-nav__list {
