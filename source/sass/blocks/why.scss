@@ -36,7 +36,7 @@
 
   flex-grow: 1;
   min-width: 290px;
-  padding-top: 105px;
+  margin-bottom: 30px;
   padding-right: 30px;
   padding-bottom: 20px;
   padding-left: 25px;
@@ -46,48 +46,13 @@
   box-shadow: 0 0 25px rgba(208, 208, 208, 0.541);
 
   @include box-sizing;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 20px;
-    left: 25px;
-    // width: 60px;
-    // height: 60px;
-
-    background-repeat: no-repeat;
-  }
-
-  &--temp::before {
-    width: 80px;
-    height: 80px;
-
-    background-image: url("../img/icon-temp.svg");
-  }
-
-  &--camera::before {
-    background-image: url("../img/icon-camera.svg");
-  }
-
-  &--taxi::before {
-    background-image: url("../img/icon-taxi.svg");
-  }
-
-  &--nutrition::before {
-    background-image: url("../img/icon-nutrition.svg");
-  }
-
-  &--strolls::before {
-    background-image: url("../img/icon-strolls.svg");
-  }
-
-  &--veterinarians::before {
-    background-image: url("../img/icon-veterinarians.svg");
-  }
 }
 
-.why__items:not(:last-child) {
+.why__items-svg {
+  width: 60px;
+  height: 60px;
   margin-bottom: 30px;
+  padding-top: 25px;
 }
 
 .why__text {
@@ -116,7 +81,6 @@
   text-align: left;
   color: $color-five;
 }
-
 
 // TABLET
 
@@ -147,15 +111,13 @@
   .why__items {
     flex-grow: 1;
     width: 324px;
-    margin-bottom: 30px;
-    padding-top: 120px;
     padding-right: 40px;
     padding-left: 25px;
+  }
 
-    &::before {
-      width: 75px;
-      height: 75px;
-    }
+  .why__items-svg {
+    width: 75px;
+    height: 75px;
   }
 
   .why__items:nth-child(odd) {
@@ -189,17 +151,18 @@
   .why__items {
     width: 370px;
     margin-bottom: 20px;
-    padding-top: 150px;
     padding-right: 50px;
     padding-left: 30px;
-
-    &::before {
-      width: 90px;
-      height: 90px;
-    }
   }
 
-  .why__items:nth-of-type(2n) {
+  .why__items-svg {
+    width: 91px;
+    height: 94px;
+    margin-bottom: 35px;
+    padding-top: 30px;
+  }
+
+  .why__items:nth-child(2n) {
     margin-right: 30px;
   }
 
