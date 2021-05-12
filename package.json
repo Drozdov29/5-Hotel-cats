@@ -38,7 +38,7 @@
     "gulp-htmlmin": "^5.0.1",
     "handlebars": "^4.7.3",
     "lodash.template": "^4.5.0",
-    "merge": "^1.2.1",
+    "merge": "^2.1.1",
     "minify-js": "0.0.4",
     "normalize.css": "^8.0.1",
     "svg4everybody": "^2.1.9",
